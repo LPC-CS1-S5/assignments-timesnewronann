@@ -17,4 +17,6 @@ int main()
 	cout << "stood on this spot.\n";
 	return 0;
 
+// leave some messages
+
 }
