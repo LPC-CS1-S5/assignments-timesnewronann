@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main ()
+int main()
 {
   char R;
 
@@ -21,4 +21,5 @@ int main ()
   cout << R << "\n";
   return 0;
 
+	// Looks good, it works.
 }

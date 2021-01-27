@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std; // I had to make a new file because my old file wasn't responding as a c++ file I copied my work over to this file just now 9:07
+int main()
+{
+    double regular_wages;
+    double work_hours=50;
+    double base_pay_rate= 18.25l, overtime_pay_rate =27.78;
+    double regular_hours=40, overtime_hours;
+    double total_wages;
+    double overtime_wages;
+
+    regular_wages = regular_hours * base_pay_rate;
+    overtime_hours = work_hours - regular_hours;
+    overtime_wages = overtime_hours * overtime_hours;
+
+    total_wages = regular_wages + overtime_wages;
+
+    cout << "Regular wages" << regular_wages << endl;
+    cout << "Overtime wages" << overtime_wages << endl;
+    cout << "Total wages" << total_wages << endl;
+    
+
+}
