@@ -1,0 +1,9 @@
+So basically you want to include all the headers that are useful for math functions
+
+then you want to delcare you variables but you don't need to initialize them yet because when we ask for user input they'll be initialized
+
+Next we make our menu for the user to input their values 
+
+We want to use a switch statement because we are using numbers to make our selection and it allows to make a default for if the user inputs a value that doesn't work
+
+The formulas are pretty self explanatory

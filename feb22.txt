@@ -1,0 +1,60 @@
+🟥  
+review of chapter 4
+
+while loop and practice
+  do while loop and foor loop
+
+Debugging tool
+
+
+
+
+if ( condition A )
+{
+	if ( condition B)
+		statement 1
+	else
+		statement 2
+}
+
+
+if / else if
+if (condition A && condition B) // T && T
+  statement 1
+else if (condition A && ! (condition B)) // T && F // F && T // F && F
+  statement 2
+
+  if (condition A)
+  {
+    if (condition B)
+      statement 1
+  }
+  else 
+    statement 2
+
+  if ( condtion A && condition B)
+    statement 1
+    else if ( !condition A)
+    statement 2
+
+  if (!condition A)
+    statement 1
+  else if ( condition A && condition B)
+    statement 2
+
+  num = 80;
+
+  if (num > 90)
+    cout << "A";
+  else if ( num > 80)
+    cout << "B";
+  else if ( num > 70)
+    cout << "C";
+    
+    if (num > 90)
+    cout << "A";
+  else if ( num > 80 && num <=90) // line 48 is false
+    cout << "B";
+  else if ( num > 70 && num <=80) // lines 48 and 50 are false 
+    cout << "C";
+  

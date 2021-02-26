@@ -1,0 +1,12 @@
+Loop Structures:
+  While Loop
+  Do While Loop
+  For loop
+
+Practice
+  Find the minimum and maxi among multiple random numbers
+  Find the certain values between the given range 
+
+Why the loop structures is important
+  Sorting
+  Quick sort

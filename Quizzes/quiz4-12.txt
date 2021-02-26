@@ -1,0 +1,11 @@
+First we set up or program like most with the header and namespace and all the usual stuff
+
+Then we declare and initialize our variables for the discounts and its rates as well as some prices.
+
+Next we want to make an if statement that will cause the program to exit and reset if the user inputs values that aren't within the range the company has set
+
+next we will use an if / else if to establish the rates depending on the weight of the package
+
+next we make another if statement for the distance just like we did with the weight
+
+repeat the if for distance and we calculate the total price of the service and print out the values we calculated

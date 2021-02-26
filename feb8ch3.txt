@@ -1,0 +1,57 @@
+Summary of Chapter 3
+
+cin 
+  to take some value from the keyboard (user input/value)
+  cin >> variablename;
+
+  you can use any variable type 
+
+Type casting:
+  implicit
+    automatically upgrade when we use the midex data type in a expression
+
+  explicit
+    static_cast<type>(variable) // you need to declare your variable before hand
+    static_cast<int>(var) converst variable to int
+
+  int f;
+    srand(static_cast<float>(f);
+    float f;
+
+Multiple assignment:
+  +=, -=, *=, ...
+  ++, --
+
+Formatted Output:
+  <iomanip>
+  setw(), setprecision(), fixed, showpoint, ...
+
+getline()
+  -cin vs getline()
+
+  string fname, lname;
+
+  cin >> fname >> lname;
+  // John Doe;
+
+  string fullName;
+  cin >> fulName; //take the first string "John"
+  //John Doe;
+
+  getline(cin,c); // take the full fullName
+  //John Doe 
+  // to get white space character
+
+Mathematical Functions:
+  <cstdlib>, <cmath> 
+
+  sqrt(x); // x^1/2 square root
+  exp()
+  pow(a,b) // a^b
+
+  rand();
+  srand(seed); //seed rand
+  srand(time(0));
+  
+  <cmath> // used for time 
+
