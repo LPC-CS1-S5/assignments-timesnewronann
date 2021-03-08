@@ -1,0 +1,19 @@
+🟥  Topics we will cover today
+
+    - Discussion 5-1 : Difference the do-whil and while loop / Create your own problems to solve with loop structure
+
+    - Discussion 5-3 : for loop
+
+    - Nested Loop Strucuture
+        - Assignment 5-3 / 5-4 / 5-5 
+
+    - File I/O : Basic concepts of file I/O operations
+    - chapter 12. File I/O operations(binary file I/O)
+
+
+🟥 Notice
+
+    - Quiz 5-2 : We will take Qui 5-2 in Class time 
+        (Next Monday) : could be changed. depends on the time of ending chapter 5.
+
+

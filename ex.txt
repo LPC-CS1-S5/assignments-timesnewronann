@@ -1,0 +1,13 @@
+
+
+
+cin >> num1 >> num2 ;
+
+while( num1 < 0 || num2 < ){
+	cin >> num1 >> nu2;
+}
+
+
+do {
+	cin >> num1 >> nun2;
+} while (num1 < 0 || num2 < 0);
