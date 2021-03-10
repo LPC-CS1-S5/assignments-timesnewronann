@@ -26,6 +26,6 @@ int main() {
     average = sum / numScores;
     cout << " Sum of scores: " << sum << "\t" << endl;
     cout << " Average of scores: " << average << endl;
-    cout << " poo poo pee pee"
+    
   }
 }
