@@ -1,0 +1,10 @@
+For the read file 
+
+I declared and initialized my variables 
+Then I opened the ifs 
+I made an if statement just in case the ifs didn't open properly
+
+I made a for loop to read the inputs and I made a print statement to show that it read properly
+
+Then I calculated the averages
+Then I closed the file.
