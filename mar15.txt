@@ -1,0 +1,16 @@
+🟥  Today's Topics
+
+■ Quiz Solutions 5-2
+1. Finding Min number among 5 random number
+2. N to power M
+3. Prime number in the given range
+4. File I/O
+
+■ Compilation Process (in Module 1)
+
+	 - Quiz 1-2 : Compilation Process, Due : Mar, 23
+		; Multiplie Choice, 2 attempts
+
+■ Chapter 6: Functions
+
+
