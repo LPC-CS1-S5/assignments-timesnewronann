@@ -1,0 +1,14 @@
+🟥  Today's Topics
+
+■ Passing by Value ( 6.3/6.4)
+	- Passing by Reference (6.13)
+
+■ Lab 6-5 
+
+■ Local / Global Variables
+■ Static Variables
+
+■ Lab 6-6
+
+
+

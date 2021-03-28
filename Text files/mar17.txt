@@ -1,0 +1,26 @@
+🟥  Today's Topics
+
+■ Function
+
+	- Funtion Prototype
+		 Type Funcaiton_Name( Parameter ) ;
+		 int getsum(int, int);
+
+	- Call statement
+	- Type of Function, Function Header (Parameters)
+		int getsum(int Num1, int Num2)
+		{
+
+		}
+	- Function Body
+	- Retrun Statement
+
+■ More Examples
+	- Collaboation between team members
+	- Lab 6-1/ 6-2 / 6-4
+
+■ Scope Rules
+	- Local/Global Variables
+	- Static Variables
+
+	

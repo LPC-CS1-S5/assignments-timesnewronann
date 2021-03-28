@@ -1,0 +1,61 @@
+🟥  Announcement
+
+	■  Midterm Exam : Mar 31, 08:00 Am 
+	■  5 Questions, 100 points
+	■  Github, Repl.
+	■  Turn on camera.
+	
+	■ Extra office hour : Today 2:00 pm
+		link : can be found in Canvas (Annoucement)
+
+🟥  What we learned in the last class
+
+	■ local / global var.
+		- Instead of using return value, 
+		- What if we use the global variable?
+		
+		(1) Recommended way : Using return value
+		result = sum(10, 20);
+		
+		(2) Not good way:  Using the global variable
+		int RESULT;
+		int main()
+		{
+			sum(10,20);
+			cout << RESULT << endl;
+		}
+		void sum(int n1, int n2){
+			RESULT = n1 + n2;
+		}
+		void another()
+		{
+			RESULT = 20; // Side Effect
+		}
+
+	■ static var.
+		- To keep the variable value in the function
+			; variable's life time in the function
+			; The memory space of local and parameter 
+			; will be destroyed when the function terminates.
+			; Static var. can hold the value	
+		
+		- Difference between static and global
+		
+	■ default parameters
+
+🟥  Today's Topics
+
+■ 
+
+■ 
+
+Reference Variables
+
+■ Pass by Reference vs. Pass by value 
+
+■ Pass by Reference vs. Pass by value (copied value)
+
+■ Overloading Functions
+
+
+	
