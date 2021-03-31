@@ -22,7 +22,16 @@ int main()
     cerr << "Error: File not opened\n";
     exit(0);
   }
-  for (int i=0; i)
+  for (int i=0; i < N; i++)
+  {
+    rdNum = getRdnum();
+    if (isGreater(rdNum))
+    {
+      outputFile << rdNum << endl;
+    }
+  }
+  outputFile.close();
+  return 0;
 }
 
 int getRdnum()
@@ -32,5 +41,13 @@ int getRdnum()
 
 int isGreater(int n)
 {
-
+  for(int i = n; i < n+1; i++ )
+  {
+    if (n < n+1){
+      return 1;
+    }
+    else
+      return 0;
+  
+  }
 }

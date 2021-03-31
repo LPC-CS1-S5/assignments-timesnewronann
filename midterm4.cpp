@@ -14,6 +14,7 @@ int main()
 
   cout << "Random number that is from 1 - 100: " << getRdnum() << endl;
   cout << "Random number that is from 1 - n2: " << getRdnum(n2) << endl;
+  cout << "Random number that is from n1 + 1 to n2" << getRdnum()
 }
 
 int getRdnum(void)
@@ -31,5 +32,6 @@ int getRdnum(int n2)
 
 int getRdnum(int n1, int n2)
 {
-  
+  int num;
+  num = rand()%
 }
