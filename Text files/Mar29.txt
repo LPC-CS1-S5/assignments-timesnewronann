@@ -1,0 +1,19 @@
+🟥  Announcement
+
+	■  Midterm Exam : Mar 31, 08:00 Am 
+	■  5 Questions, 100 points
+	■ 	Time limit : 180 mins.
+	■  Github, Repl.
+	■  Turn on camera.
+	
+
+🟥  What we learned in the last class
+	- Reference variables
+	- Ref. varialbe as a Function Parameters
+		to achieve the passing-by-reference 
+
+🟥  Today's Topics
+
+
+
+

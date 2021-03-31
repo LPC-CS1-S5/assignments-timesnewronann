@@ -26,5 +26,17 @@ int main()
   do {
     cout << "Enter your input (two integer for range)" << endl;
     cin >> begin >> end;
-  }
-}
+    if (begin < end)
+    {
+      getListprime(begin,end);
+    }
+    else if(begin < end)
+    {
+      getListprime();
+    }
+    else
+    {
+      getListprime(begin);
+    } 
+  }while (begin != -1);
+} 

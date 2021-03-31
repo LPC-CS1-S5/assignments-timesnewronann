@@ -4,7 +4,7 @@ using namespace std;
 void getlistprime(int num1, int num2)
 {
   int i, j;
-  for (i = num1; i < num2; i++)
+  for (i = num1; i < num2; i++) // nested for loop to find prime numbers
   {
     for (j = 2; j < (i/2); j++)
     {

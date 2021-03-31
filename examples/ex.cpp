@@ -1,39 +1,21 @@
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
-
 using namespace std;
 
 int main()
 {
+	int num = 10;
+	int &ref = num;
+	
+	cout << ref << endl;
+	ref = 20;
 
-	int i;
-	int sum; // local variables : not initialized 
+	cout << ref << endl;
+	cout << num << endl;
 
-	i = 0;
-  sum =0;
-	while (i < 10)
-	{
-		sum += i;
-		i++;
-	}
-	cout << "sum " << sum << endl;
+	num = 30;
 
-  i - 0;
-  while (i++ < 10)
-    cout << i << endl; // 0,1,2,3... 9
-
-  i = 0;
-  while (i++ <10) // starts from 0 but print value is not from 0 - 1,2,3,4,5,6... 10
-    cout << i << endl;
-  
-  i = 0;
-  while (++i < 10) // starts at 1 1,2,3,4,... 9
-    cout << i << endl;
-
-  /* while loop
-  1. lcv initial
-  2. condition
-  3. ++/ -- */
-
+	cout << ref << endl;
+	cout << num << endl;
 }
+
+
