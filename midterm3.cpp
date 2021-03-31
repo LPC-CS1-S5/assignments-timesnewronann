@@ -41,13 +41,21 @@ int getRdnum()
 
 int isGreater(int n)
 {
-  for(int i = n; i < n+1; i++ )
-  {
-    if (n < n+1){
-      return 1;
-    }
-    else
-      return 0;
-  
+  static int prec = 0;
+  int a, b;
+  a = n;
+  if(prec==0){
+    prec = n;
+    return(0);
   }
-}
+  if (prec < n) {
+    
+    prec = n;
+    return(1);
+  }
+    else{
+      prec = n;
+    return(0);
+    }
+  }
+  
