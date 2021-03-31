@@ -3,7 +3,7 @@
 #include <ctime>
 using namespace std;
 
-int getRdnum(void) // random num 1-100
+int getRdnum() // random num 1-100
 int getRdnum(int n2) // random num 1 - n2
 int getRdnum(int n1,int n2) // random number n1 + 1, n2
 
@@ -17,7 +17,7 @@ int main()
   cout << "Random number that is from n1 + 1 to n2" << getRdnum()
 }
 
-int getRdnum(void)
+int getRdnum()
 {
   return rand() % 100 + 1;
 }
@@ -33,5 +33,6 @@ int getRdnum(int n2)
 int getRdnum(int n1, int n2)
 {
   int num;
-  num = rand()%
+  num = rand()% (n2 - n1 + 1) + n1;
+  return num;
 }
