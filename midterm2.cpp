@@ -15,7 +15,7 @@ int main()
     cerr << "Error: file was not opened";
     exit(0);
   }
-  while (inputFile >> name >> score1 >> score2)
+  while (inputFile >> name >> score1 >> score2 >> sum >> average) 
    {
      cout << "Student's name: " << name << "\t";
      cout << "Score 1: " << score1 << "\t";
