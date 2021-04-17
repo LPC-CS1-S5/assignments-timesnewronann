@@ -1,0 +1,31 @@
+🟥  What we learned in Last week
+
+	■ Chapter 7. Array.
+		- Array decalration
+			; Memory Layout
+				int num[10] => 4 bytyes x 10 elements = 40 bytes
+		- Accessing elements	
+			with the index from 0 to N-1 
+		
+		- Ranged-based for loop
+			for (int elem : num)
+				cout << elem ; 
+			for (int &elem: num)
+				elem += 10;
+
+🟥  Today's topic
+
+	Warming-up Examples
+		(1) Can we copy the array to another array?
+			int num1[10]={1,2,3,4,5}
+			int num2[10];
+
+			num2 = num1; // Error. Python or Other higher languages : OKay.
+						// Array name is "constant pointer".
+
+			 
+
+
+
+
+	
