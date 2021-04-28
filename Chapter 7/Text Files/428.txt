@@ -1,0 +1,20 @@
+Last week:
+  Chapter 7:
+    2D arrays
+    
+    1) Initialization
+      int num[3][3] = { {11, 12, 13} ,
+                        {21, 22, 23},
+                        {31, 32, 33}
+      };
+
+      int num2[3][3] = { 11, 12, 13, 21, 22, 23, 31, 32 ,33};
+
+    2D array with character string
+    vector
+
+    Quiz 7: Due May 4th
+      Programming Quiz'
+      4 questions
+
+    Pointers
