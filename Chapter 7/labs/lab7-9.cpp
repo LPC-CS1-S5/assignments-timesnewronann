@@ -20,7 +20,10 @@ int main()
   }
 }
 
-void findMaxSum(int result[], int num[][5], int rows, int cols)
+void findMaxSum(int result[], int num[][5], int rows, int cols) // int [][5] empty bracket is a pointer
+// cout << *(result + i) <-- pointer 
+// pointer to one dimensional array (5) 
+// void findMaxSum(int *result, int *num[5], int rows, int cols)
 {
   int maxrowsum = 0;
   for(int i =0; i <rows; i++)

@@ -23,4 +23,8 @@ int main()
 
   cout << "NULL" << cstrarray[0][3] << endl;
   cout << "size of " << sizeof(cstrarray[0]) << endl;
+
+  char str[3] = "ABC";
+
+  cout << str << endl; // the arrays have null values at the end of them
 }
