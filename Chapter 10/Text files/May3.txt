@@ -1,0 +1,57 @@
+What we learned last week
+
+  Chapter 7 Array.
+  - Array Initialization
+  - Range-based for loop; vector, class-based
+  - Array as function arguments
+    (regarded as a pointer)
+    int num[5];
+    printarray(num); pointer of integer
+  -two dimensional arrays 
+    one dimensional array of one dimensional array.
+    int num[3][5];
+
+    num[1] is the array which has 5 elements of array.
+      ; num[1] can be regarded as a pointer (points to one dimensional array)
+
+  - vector
+    vector <int> num;
+    vector <int> num(10,0); declared as zero 
+    vector <int> num(10); will already be initialized as zero
+    vector <int> num {1,2,3,4,5};
+    num[5] = 20; // causes an error, vectors check the boundary
+
+    compared to array,
+    int num[5];
+    num[5] = 20; // logical error 
+
+    member functions of vector 
+      num.push_back(10); // append 10 
+      num.pop_back();
+      num.clear();
+      num.erase();
+      num.sizeof();
+
+      vector<int>:: iterator iter; // will be used in string type
+
+        num.erase(iter);
+        num.insert(iter,20) // (iterator, integer value)
+
+      vector<int> number1{15, 2, 315, 1, 50}; // How to traverse the vector
+       vector<int>:: iterator iter;
+
+       for (iter = number1.begin(); iter != number1.end; iter++)
+       {
+       *iter += 10; // pointer
+       cout << iter << endl;
+
+
+  Today's topic
+
+    Chapter 10. Characters /C-String/ String 
+      
+      Built-in Library Functions for Characters and C-String.
+      Member function of String 
+
+      What is the C-String?
+        chat name[10]; // character array to store the string 
