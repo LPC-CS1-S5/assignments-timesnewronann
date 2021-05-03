@@ -38,3 +38,61 @@ int main()
   printvector(number); 
 
 }
+
+void makevector(vector<int> &number) // vector function 
+{
+  for(int i = 0; i<number.size(); i++)
+  {
+    number[i] = randum() % 20;
+  }
+  sort(number.begin(), number.end()); // need begin and end for the sort 
+}
+
+void insertvector(vector<int> &number, int usernum)
+{
+  int flag = 1; 
+  vector <int> :: iterator iter; // iterator
+
+  for(iter = number.begin(); iter != number.end(); iter++)
+  {
+    if (usernum < *iter)
+    {
+      number.insert(iter, usernum); // inserts the user value
+      flag = 0; 
+      break;
+    }
+  }
+  if (flag)
+  {
+    number.insert(number.end(), usernum);
+  }
+}
+
+void deletevector(vector<int> &number, int username)
+{
+
+}
+
+int getinput(void)
+{
+  int num; 
+  cout << "Enter your input\n";
+  cin >> num;
+  return num;
+
+}
+
+int randnum(void)
+{
+  return rand() & 100;
+
+}
+
+void printvector(vector<int> number)
+{
+  for (auto iter=number.begin(); iter != number.end(); iter++)
+  {
+    cout << setw(5) << *iter;
+  }
+  cout << endl;
+}
