@@ -19,5 +19,5 @@ int findMax(int number[], int from, int to)
 {
   int max = 0;
   int maxTwo = 0;
-  for (in)
+  for (int i = 0; i <= to)
 }
