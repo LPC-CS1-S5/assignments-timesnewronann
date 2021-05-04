@@ -70,7 +70,17 @@ void insertvector(vector<int> &number, int usernum)
 
 void deletevector(vector<int> &number, int username)
 {
+  vector<int> :: iterator iter; 
 
+  iter = find(number.begin(), number.end(), username);
+  if (iter != number.end())
+  {
+    number.erase(iter);
+  }
+  else 
+  {
+    cout << "Delete Item: Not Found " << endl;
+  }
 }
 
 int getinput(void)

@@ -22,4 +22,13 @@ int main()
 int sum2D ( int num[][5], int rows, int cols) // you can call the parameter something else
 {
   int sum = 0;
+
+  for(int i = 0; i < rows; i++)
+  {
+    for(int j = 0; j < cols; j++)
+    {
+      sum += num[i][j];
+    }
+  }
+  return sum;
 }
