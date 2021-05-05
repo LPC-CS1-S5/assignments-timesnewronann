@@ -42,21 +42,21 @@ void deleteone(vector<int> &vec)
   int usernum;
   int deleteWOO = 0;
 
-  cout << "Enter the user's value: " << endl;
+  cout << "Enter the user's value: " << endl; // enter the value they want to delete 
   cin >> usernum;
   cout << endl;
 
-  vector<int> :: iterator iter;
+  vector<int> :: iterator iter; // create the vector 
   iter = find(vec.begin(), vec.end(), usernum);
 
-  if (iter != vec.end() && usernum)
+  if (iter != vec.end() && usernum) 
   {
-    vec.erase(iter);
+    vec.erase(iter); // deletes the one number 
   }
   else 
   {
     cout << "Delete Item: Not Found " << endl;
-  }
+  } 
 
   cout << usernum << "is deleted " << deleteWOO << " times " << endl;
   printvector(vec);
