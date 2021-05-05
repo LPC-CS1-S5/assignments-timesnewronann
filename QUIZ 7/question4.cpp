@@ -36,3 +36,11 @@ void printvector(vector<int> vec)
   }
   cout << endl;
 }
+
+void deleteone(vector<int> &vec)
+{
+  int usernum;
+  int deleteWOO = 0;
+
+  cout << "Enter the user's value: " << endl;
+}
