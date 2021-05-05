@@ -13,17 +13,28 @@ int main()
   int to = N - 1; // the last index of the range 
   int max;
   int maxTwo;
+
+  max = findMax(number, from, to);
+  cout << max << endl;
 }
 
 int findMax(int number[], int from, int to)
 {
   int max = 0;
   int maxTwo = 0;
-  for (int i = to/2; i <= to; i++)
+  
+  for (int i = from; i < to/2; i++) // from is basically 0 so from the start to the middle of the list
   {
-    if(maxTwo < num[i])
+    if (max < number[i])
     {
-      maxTwo = num[i];
+      max = number[i];
+    }
+  }
+  for (int i = to/2; i <= to; i++) // traverse the array half way to the end of the list
+  {
+    if(maxTwo < number[i])
+    {
+      maxTwo = number[i];
     }
   }
   return max,maxTwo;
