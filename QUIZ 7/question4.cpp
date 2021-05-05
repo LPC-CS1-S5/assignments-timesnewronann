@@ -27,3 +27,12 @@ void makevector(vector<int> &vec, int size)
     vec.push_back(rand() % 10);
   }
 }
+
+void printvector(vector<int> vec)
+{
+  for (int v : vec) // ranged based for loop
+  {
+    cout << v << "\t";
+  }
+  cout << endl;
+}
