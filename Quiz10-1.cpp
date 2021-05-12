@@ -11,12 +11,12 @@
 #include <cstring> // used for the character functions
 
 using namespace std;
-bool count(char[], char[]) // count the amount of th in the paragraph
+bool count(char[], char[]); // count the amount of th in the paragraph
 
 int main()
 {
-  char python[] = "th";
-  char read[];
+  char python[5] = "th";
+  char read[20];
 
   ifstream ifs;
   int count = 0;
