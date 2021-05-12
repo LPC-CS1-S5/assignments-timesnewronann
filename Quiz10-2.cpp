@@ -18,7 +18,7 @@ bool domain(char[]); // domain name should be from the list
 
 int main()
 {
-  cont int SIZE = 100;
+  const int SIZE = 100;
   char email[SIZE];
 
   cout << "Enter your email: " << endl;
@@ -26,22 +26,26 @@ int main()
 
   if (alphabet(email))
   {
-
+    cout << "Email alphabet passed ! " << endl;
   }
 
   if (length(email))
   {
-
+    cout << "Email length passed ! " << endl;
   }
 
   if (domain(email))
   {
-
+    cout << "Email domain passed ! " << endl;
   }
 
   if ( (alphabet(email)) && (length(email)) && (domain(email)) )
   {
-
+    cout << "This email is valid ! " << endl;
+  }
+  else 
+  {
+    cout << "This email is invalid ! " << endl;
   }
 
 
@@ -50,4 +54,52 @@ int main()
 bool alphabet(char email[])
 {
   int i = 0;
+  if ( ! isalpha(email[0]))
+  {
+    return false;
+  }
+  while (email[i] != '@')
+  {
+    if (!isalnum(email[i]))
+    {
+      return false;
+    }
+    i +=1;
+  }
+}
+
+bool length(char email[])
+{
+  int i = 0;
+  while (email[i] != '@')
+  {
+    i++;
+  }
+
+  if ((i > 5) && (i < 15)) // if the email fits within the length specified
+  {
+    return true;
+  }
+  else 
+  {
+    cout << "This email does not fit the length of the constraints, try again!" << endl;
+    return false;
+  }
+}
+
+bool domain(char email[])
+{
+  const char DSIZE = 10;
+  char domain[DSIZE][10] = { "com", "edu", "org", "net", "gov"};
+  for (int i = 0; i < DSIZE; i++)
+  {
+    if(strcmp(domain[i], email+strlen(email)-3) == 0)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+  }
 }
