@@ -42,7 +42,7 @@ int main()
           read[i] = tolower(read[i]);
         }
       }
-      if (count(read, python))
+      if (count(read, python)) // reads the amount of th in the paragraph
     }
   }
 }
@@ -55,6 +55,10 @@ bool count(char read[], char python[])
   pos = (strstr(read, python));
   if (pos != NULL)
   {
-    return tru
+    return true;
+  }
+  else
+  {
+    return false;
   }
 }
