@@ -15,7 +15,7 @@ bool count(char[], char[]) // count the amount of th in the paragraph
 
 int main()
 {
-
+  char python[]
 }
 
 
@@ -23,5 +23,5 @@ bool count(char read[], char python[])
 {
   char *pos;
 
-  pos =
+  pos = (st)
 }
