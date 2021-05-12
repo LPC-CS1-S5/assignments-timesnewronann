@@ -35,7 +35,7 @@ int main()
       int length;
       length = strlen(read); // get string length: returns the length of the c string str
 
-      for ( int i = 0; i < length.size(); i++)
+      for ( int i = 0; i < length; i++)
       {
         if (isupper(read[i]))
         {
@@ -43,6 +43,10 @@ int main()
         }
       }
       if (count(read, python)) // reads the amount of th in the paragraph
+      {
+        cout << read << " " << python << endl;
+        count++;
+      }
     }
   }
 }
