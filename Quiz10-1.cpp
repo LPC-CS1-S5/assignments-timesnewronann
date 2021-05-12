@@ -5,17 +5,28 @@
 
 //In order to count the number of occurrences of the keyword, we can use any kind of member function from the String class. All occurrences in a word should be counted as separate occurrences. For example, "thither" has two "th" substrings.
 
-#include <iostream>
-#include <fstream>
-#include <cctype>
-#include <cstring>
+#include <iostream> // used for the cout and cin
+#include <fstream> // used for file input output
+#include <cctype> // used for the bool count for strlen and strstr
+#include <cstring> // used for the character functions
 
 using namespace std;
 bool count(char[], char[]) // count the amount of th in the paragraph
 
 int main()
 {
-  char python[]
+  char python[] = "th";
+  char read[];
+
+  ifstream ifs;
+  int count = 0;
+
+  ifs.open("python.txt");
+  if(ifs.fail())
+  {
+    cerr << "File open error: ";
+    exit(0);
+  }
 }
 
 
