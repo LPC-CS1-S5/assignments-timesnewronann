@@ -27,6 +27,24 @@ int main()
     cerr << "File open error: ";
     exit(0);
   }
+
+  if (ifs)
+  {
+    while (ifs >> read)
+    {
+      int length;
+      length = strlen(read); // get string length: returns the length of the c string str
+
+      for ( int i = 0; i < length.size(); i++)
+      {
+        if (isupper(read[i]))
+        {
+          read[i] = tolower(read[i]);
+        }
+      }
+      if (count(read, python))
+    }
+  }
 }
 
 
@@ -34,5 +52,9 @@ bool count(char read[], char python[])
 {
   char *pos;
 
-  pos = (st)
+  pos = (strstr(read, python));
+  if (pos != NULL)
+  {
+    return tru
+  }
 }
