@@ -8,4 +8,46 @@
 //The program asks for the user email string and then split the id, //organization name, and domain name. After that, check the validity of the //email string base on the above requirements.
 
 #include <iostream>
-#include <io
+#include <cstring>
+#include <cctype>
+
+using namespace std;
+bool alphabet(char[]); // email must be starting with the alphabet characters
+bool length(char[]); // length must be 5 < x < 15
+bool domain(char[]); // domain name should be from the list
+
+int main()
+{
+  cont int SIZE = 100;
+  char email[SIZE];
+
+  cout << "Enter your email: " << endl;
+  cin >> email;
+
+  if (alphabet(email))
+  {
+
+  }
+
+  if (length(email))
+  {
+
+  }
+
+  if (domain(email))
+  {
+
+  }
+
+  if ( (alphabet(email)) && (length(email)) && (domain(email)) )
+  {
+
+  }
+
+
+}
+
+bool alphabet(char email[])
+{
+  int i = 0;
+}
