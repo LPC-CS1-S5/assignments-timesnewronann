@@ -48,7 +48,7 @@ int main()
         count++;
       }
     }
-    cout << "There are " << count << " th in the text file" << endl;
+    cout << "There are " << count << " th's in the text file" << endl;
   }
 }
 
