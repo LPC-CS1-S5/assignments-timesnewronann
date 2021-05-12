@@ -11,7 +11,7 @@
 #include <cstring> // used for the character functions
 
 using namespace std;
-bool count(char[], char[]); // count the amount of th in the paragraph
+bool times(char[], char[]); // count the amount of th in the paragraph
 
 int main()
 {
@@ -42,7 +42,7 @@ int main()
           read[i] = tolower(read[i]);
         }
       }
-      if (count(read, python)) // reads the amount of th in the paragraph
+      if (times(read, python)) // reads the amount of th in the paragraph
       {
         cout << read << " " << python << endl;
         count++;
@@ -52,7 +52,7 @@ int main()
 }
 
 
-bool count(char read[], char python[])
+bool times(char read[], char python[])
 {
   char *pos;
 
