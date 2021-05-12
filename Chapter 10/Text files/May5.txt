@@ -1,0 +1,23 @@
+Chapter 10 Chracters / C-String / String
+
+Characters
+- Header files: << cctype >
+isXXXXX, isdigit(), isalpha(), isalnum()
+  parameter : character
+
+  C-String 
+    header files : <cstring> 
+      strxxxx, strlen(), strncat(), strcnp(), strstr()
+
+  Today's Topic
+
+  Chapter 10 String
+
+  more examples to understand the c-string function
+
+  header file: <string> 
+  c-string vs string
+    array vs vector
+
+  char csts[10] = "lalala";
+  string str = "lalala";

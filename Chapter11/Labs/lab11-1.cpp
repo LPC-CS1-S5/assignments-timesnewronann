@@ -1,0 +1,55 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+  const int NUMCOURSE = 2;
+  ifstream ifs;
+
+  struct student
+  {
+    int id;
+    string name;
+    int score[NUMCOURSE];
+    int sum;
+    int avg;
+  };
+
+  student s[10];
+  int i = 0;
+
+  ifs.open("students.txt");
+
+
+  while(i < 10)
+  {
+    s[i].sum = 0;
+    ifs >> s[i].id;
+	cout << " ID : " << s[i].id << endl;
+    ifs >> s[i].name;
+	cout << " name : " << s[i].name << endl;
+    for(int j = 0; j < NUMCOURSE; j++)
+    {
+      ifs >> s[i].score[j];
+		cout << " score : " << s.score[j] << endl;
+      s.sum += s.score[j];
+    }
+
+	cout << " Sum : " << s[i].sum << endl;
+    s[i].avg = s[i].sum / 2;
+	cout << " Avg : " << s[i].avg << endl;
+    i++;
+  }
+
+  ifs.close();
+
+  // Make a code for finding some record that has "given name"
+
+  // while or for loop to traverse 
+  // if ( s[i].name === userinput) use string compare or member function to compare values
+  
+  
+
+  
+}

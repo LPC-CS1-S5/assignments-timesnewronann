@@ -1,0 +1,37 @@
+What we learned last Week
+
+Chapter 10. Character/ C-string/ string
+
+c-string vs string
+Character Array vs Class
+
+Character
+char;
+  isdigit();
+  isalnum();
+  isupper();
+  islower();
+  ...
+
+char cstr[10];
+
+Standard (built-in) Library Functions
+
+strlen(...)
+strcmp(...)
+
+Class Supports its member functions.
+string s1;
+s1.length();
+s1.append(...);
+s1.assign(...);
+..
+
+Today's Topic
+
+Chapter 11. Structured Data.
+
+vs. Class Type
+
+08:00 -09:15; lecture
+09:30 -10:45: Excercise 11-1
