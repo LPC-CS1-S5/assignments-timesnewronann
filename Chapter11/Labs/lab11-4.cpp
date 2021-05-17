@@ -1,3 +1,18 @@
+//Int makingNameRecords
+// make the struct array nr
+// read from a file and then parse the each field by the delimeter ','
+// Assign the each field value to the member variable in struct
+
+//  parameter nr[]
+// the arrays of Namerecords that are filled with the fields of the line read from a file.
+
+// return value 
+// the number of array elements
+// the same number of the lines read from a file
+
+// void printNameRecords(Namerecords[], int)
+// print all elements in struct array 
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -91,5 +106,5 @@ string getname(string str)
 
 int getcount(string str)
 {
-  
+
 }

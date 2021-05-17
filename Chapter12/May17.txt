@@ -1,0 +1,47 @@
+🟥  What we learned in Last week
+
+	■ Final Grade
+
+	 Quizzes(170) + Midterm(100) + Final(100) = 370
+
+	 All assignment points = Extra points.
+
+	 90% ( > 333 ) = A
+	 80% ( > 296 ) = B
+	 70% ( > 259 ) = C
+	 60% ( > 222 ) = D
+	 Others.
+
+	Chapter 11. Structures.
+    CA, F, 2018, Mary, 10
+
+    string substr(), find() // helpful for spliting the field
+
+
+		
+🟥  Today's topic
+
+	Chapter 12. File Opertions
+
+		Binary File Operations
+			- Text file vs Binary File
+          Human readable vs not human readable
+            File is not encoded by the ASCII code (exact reason)
+        Text File all context are encoded by ASCII code
+
+        Binary fil(binary format)
+          Not human readable
+          a.out
+          presentation.ppt
+          application
+          image file
+          name.bin
+
+		1) read() and write() 
+       make the file with the sturcture contents 
+
+    2) getline()
+
+
+
+	
