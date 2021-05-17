@@ -1,0 +1,10 @@
+CA,F,1910,Mary,295
+CA,F,1910,Helen,239
+CA,F,1910,Dorothy,220
+CA,F,1910,Margaret,163
+CA,F,1910,Frances,134
+CA,F,1910,Ruth,128
+CA,F,1910,Evelyn,126
+CA,F,1910,Alice,118
+CA,F,1910,Virginia,101
+CA,F,1910,Elizabeth,93

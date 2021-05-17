@@ -1,0 +1,16 @@
+A union  is almost all regards, just like a structure
+The difference is that all the members of a union use the same memory area
+  so only one member can be used at a time
+
+A union might be used in an application:
+  The program needs to work with two or more values (of different data types)
+  but only needs to use one of the values at a time 
+
+Unions conserve memory by storingall their members in the same memory location.
+Unions are declared just like structures,
+  except the key word union is used instead of struct
+
+  union Paysource{
+      short hours;
+      float sales;
+  };

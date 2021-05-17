@@ -1,0 +1,40 @@
+Enumerated Data Types:
+  a programmer-defined data type.
+  Consists of values known as enumerators
+  Represent integer constants 
+
+Example:
+enum day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY };
+Identifiers
+MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY 
+which are listed inside the braces, are enumerators
+They Represent the values that belong to the Day data type
+
+enumerators  are not strings
+  So they aren't enclosed in quotes
+  They are Identifiers
+
+Assigning an integer to an enum Variable
+  You cannot directly assign an integer value to an enum variable.
+  This will not work
+
+  workDay = 3; // Error!
+
+  You must cast the integer:
+
+  workDay = static_cast<Day>(3);
+
+Using an enum Variable to step through an Array's elements
+
+Remember though:
+  You cannot use the ++ operator on an enum variable.
+  So the following loop will not work.
+
+Day workDay; // Define a Day variable
+//Error!! This code will NOT work.
+for (workDay = MONDAY; workDay <= FRIDAY; workDay++)
+{
+  cout << "Enter the sales for day "
+    << workDay << ": ";
+    cin >> sales[workDay];
+}
