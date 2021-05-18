@@ -60,7 +60,7 @@ int main()
 
   cout << "Employees that make over 100000: " << endl;
 
-  cout << salaryEmployee(er, numOfRecords);
+  salaryEmployee(er, numOfRecords);
   
   cout << "Employees that work in the Computer department: " << endl;
   computerDepartment(er, numOfRecords);
@@ -68,7 +68,7 @@ int main()
 
 }
 
-int makeEmployeeRecord(EmployeeRecord[])
+int makeEmployeeRecord(EmployeeRecord er[])
 {
   int i; 
   ifstream ifs;
@@ -94,6 +94,7 @@ void salaryEmployee(EmployeeRecord er[],int num)
  int pos; // I got my salary from my other code that I wrote which didn't properly answer the question
   for (int i = 0; i < num; i++)
   {
+    int salary = 100000;
     if( er[i].salary > salary)
     {
       printEmployeeRecord(er[i]);
@@ -106,7 +107,7 @@ void computerDepartment(EmployeeRecord er[], int num)
   int pos;
   for (int i = 0; i < num; i++)
   {
-    if (emp[i].department == "Computer")
+    if (er[i].department == "Computer")
     {
       printEmployeeRecord(er[i]);
     }
