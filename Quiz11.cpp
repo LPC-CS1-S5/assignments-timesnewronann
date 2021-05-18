@@ -31,22 +31,21 @@ const int MAXSIZE =  1000;
 
 struct EmployeeRecord{
   int ID;
-  string firstname;
-  string lastname;
+  string name;
   int salary;
   string department;
-  int day;
-  int year;
-  string month;
+  stringd date;
+  int count;
 };
 
 int makeEmployeeRecord(EmployeeRecord []);
-
 void printEmployeeRecord(EmployeeRecord emp);
 
-void findDepartment(EmployeeRecord[], int);
-
-void salaryEmployee(EmployeeRecord[], int);
+string getdepartmentname(string);
+string getname(string);
+int getsalary(string);
+string getdate(string);
+int getId(string);
 
 int main()
 {
@@ -82,12 +81,3 @@ void printEmployeeRecord(EmployeeRecord nr[], int numOfRecords)
   cout << "ID: " << "\t\tName: " << "\t\tSalary: " << " Department: " << " Date: " << endl;
 }
 
-void findDepartment(EmployeeRecord emp);
-{
-
-}
-
-void salaryEmployee(EmployeeRecord[],int);
-{
-  for(int i = 0; )
-}

@@ -1,6 +1,6 @@
-123456 John Doe 140000 Computer Jan 31 2020
-999999 Steve Jobs 200000 Computer May 18 2021
-111111 Kyu Lee 300000 Computer May 18 2020
-654321 Stephanie Tang 400000 Computer May 18 2019
-555555 Poop Poop 123456 Toliet Jan 30 2020
-888888 Haha Jaja 543211 Comedey Mar 22 1999
+123456,John Doe,140000,Computer,Jan 31 2020
+999999,Steve Jobs,200000,Computer,May 18 2021
+111111,Kyu Lee,300000,Computer,May 18 2020
+654321,Stephanie Tang,400000,Computer,May 18 2019
+555555,Poop Poop,123456,Toliet,Jan 30 2020
+888888,Haha Jaja,543211,Comedy,Mar 22 1999
