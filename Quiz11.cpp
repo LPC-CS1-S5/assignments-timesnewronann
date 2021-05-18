@@ -84,5 +84,10 @@ void printEmployeeRecord(EmployeeRecord nr[], int numOfRecords)
 
 void findDepartment(EmployeeRecord emp);
 {
-  
+
+}
+
+void salaryEmployee(EmployeeRecord[],int);
+{
+  for(int i = 0; )
 }
