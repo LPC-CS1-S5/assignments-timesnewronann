@@ -76,3 +76,13 @@ int makeEmployeeRecord(EmployeeRecord nr[])
   }
 
 }
+
+void printEmployeeRecord(EmployeeRecord nr[], int numOfRecords)
+{
+  cout << "ID: " << "\t\tName: " << "\t\tSalary: " << " Department: " << " Date: " << endl;
+}
+
+void findDepartment(EmployeeRecord emp);
+{
+  
+}
