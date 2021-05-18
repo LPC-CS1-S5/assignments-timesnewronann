@@ -4,3 +4,4 @@
 654321,Stephanie Tang,400000,Computer,May 18 2019
 555555,Poop Poop,123456,Toliet,Jan 30 2020
 888888,Haha Jaja,543211,Comedy,Mar 22 1999
+333333, uhhh ahhh, 60000, poor, Feb 24 2000

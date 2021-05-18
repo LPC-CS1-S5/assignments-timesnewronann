@@ -43,7 +43,7 @@ void printEmployeeRecord(EmployeeRecord nr);
 
 string getdepartmentname(EmployeeRecord nr, string);
 string getname(string);
-int getsalary(string);
+int getsalary(EmployeeRecord [],string);
 string getdate(string);
 int getId(string);
 
@@ -140,7 +140,7 @@ string getdate(string str)
   return str.substr(startpos, endpos-startpos);
 }
 
-int getsalary(string str)
+int getsalary(EmployeeRecord [],string str)
 {
   int startpos, pos, endpos;
  startpos = 0;
@@ -148,6 +148,11 @@ int getsalary(string str)
   {
     pos = str.find(',',startpos);
     startpos = pos+1;
+    int salary =100000;
+    if (nr[i].salary > salary))
+    {
+      printEmployeeRecord(nr[i]);
+    }
   }
   endpos = str.find(',',startpos);
   cout << str.substr(startpos, endpos-startpos);

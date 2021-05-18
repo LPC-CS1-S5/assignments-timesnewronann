@@ -94,7 +94,7 @@ void salaryEmployee(Employee er[],int num)
 
 void computerDepartment(Employee er)
 {
-  int startpos, pos, endpos;
+  int pos
 }
 void printEmployeeRecord(Employee er)
 {
