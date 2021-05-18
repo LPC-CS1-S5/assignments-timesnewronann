@@ -39,9 +39,9 @@ struct EmployeeRecord{
 };
 
 int makeEmployeeRecord(EmployeeRecord []);
-void printEmployeeRecord(EmployeeRecord emp);
+void printEmployeeRecord(EmployeeRecord nr);
 
-string getdepartmentname(string);
+void getdepartmentname(Employee nr);
 string getname(string);
 int getsalary(string);
 string getdate(string);
@@ -92,7 +92,7 @@ void printEmployeeRecord(EmployeeRecord nr[], int numOfRecords)
 
 }
 
-string getdepartmentname(string str)
+void getdepartmentname()
 {
   int startpos, pos, endpos;
   startpos = 0;
@@ -100,6 +100,7 @@ string getdepartmentname(string str)
   {
     pos = str.find(',', startpos);
     startpos = pos+1;
+    if ()
   }
   endpos = str.find(',', startpos);
   return str.substr(startpos, endpos-startpos);
