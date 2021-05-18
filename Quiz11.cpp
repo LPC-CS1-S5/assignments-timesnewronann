@@ -22,3 +22,9 @@
     Find the employee that has a salary greater than 100,000
     Find the employee that works in the "Computer" department
   */
+#include <iostream>
+#include <fstream>
+#include <string> 
+using namespace std;
+
+const int MAXSIZE =  1000;
