@@ -30,11 +30,11 @@ using namespace std;
 const int MAXSIZE =  1000;
 
 struct EmployeeRecord{
-  int ID;
+  int Id;
   string name;
   int salary;
   string department;
-  stringd date;
+  string date;
   int count;
 };
 
@@ -71,13 +71,38 @@ int makeEmployeeRecord(EmployeeRecord nr[])
   }
 
   while ((ifso >> readline) && (count < 1000)) {
-    nr[count].ID = getId()
+    nr[count].Id = getId(readline);
+    nr[count].name = getname(readline);
+    nr[count].salary = getsalary(readline);
+    nr[count].date = getdate(readline);
+    count++;
   }
+  return count;
 
 }
 
 void printEmployeeRecord(EmployeeRecord nr[], int numOfRecords)
 {
   cout << "ID: " << "\t\tName: " << "\t\tSalary: " << " Department: " << " Date: " << endl;
+
 }
 
+string getdepartmentname(string str)
+{
+  int startpos, pos, endpos;
+  startpos = 0;
+  for (int i = 0; i < 3)
+}
+
+string getname(string str)
+{
+  int startpos, pos, endpos;
+  startpos = 0;
+  for (int i = 0; i < 1; i++)
+  {
+    pos = str.find(',',startpos);
+    startpos = pos+1;
+  }
+  endpos = str.find(',',startpos);
+  return str.substr(startpos, endpos-startpos);
+}
