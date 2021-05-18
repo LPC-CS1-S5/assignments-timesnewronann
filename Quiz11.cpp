@@ -39,3 +39,7 @@ struct EmployeeRecord{
   int year;
   string month;
 };
+
+int makeEmployeeRecord(EmployeeRecord []);
+
+void printEmployeeRecord(Employee emp);
