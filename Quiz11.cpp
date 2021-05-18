@@ -48,4 +48,20 @@ void findDepartment(EmployeeRecord[], int);
 
 void salaryEmployee(EmployeeRecord[], int);
 
-int 
+int main()
+{
+  int numOfRecords = 0;
+  EmployeeRecord nr[MAXSIZE]; // Call makeEmployeeRecord and printEmployeeRecord
+
+  numOfRecords = makeEmployeeRecord(nr);
+  printEmployeeRecord(nr, numOfRecords);
+
+}
+
+int makeEmployeeRecord(EmployeeRecord nr[])
+{
+  int count = 0;
+  string readline;
+  ifstream ifso;
+  
+}
