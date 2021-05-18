@@ -1,0 +1,6 @@
+123456 John Doe 140000 Computer Jan 31 2020
+999999 Steve Man 90000 Accountant Mar 30 2019
+888888 Roblox Dude 65000 Computer Jan 8 1999
+654321 Steve Mine 200000 Engineer Feb 26 2002
+444444 Poop Eater 45000 Sanitation Mar 27 2002
+333333 Moon Yawnyo 300000 Rich guy Dec 12 1965

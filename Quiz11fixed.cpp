@@ -66,7 +66,7 @@ int makeEmployeeRecord(EmployeeRecord[])
 {
   int i; 
   ifstream ifs;
-  ifs.open("employee.txt");
+  ifs.open("employeeFixed.txt");
   if(!ifs) {
     cout << "File Open Error\n";
     exit(0);
@@ -92,7 +92,7 @@ void salaryEmployee(Employee er[],int num)
   return str.substr(startpos, endpos-startpos);
 }
 
-void computerDepartment(Employee er)
+void computerDepartment(Employee er[], int num)
 {
   int pos;
   for (int i = 0; i < num; i++)
