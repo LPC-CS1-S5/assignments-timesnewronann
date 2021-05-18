@@ -63,5 +63,16 @@ int makeEmployeeRecord(EmployeeRecord nr[])
   int count = 0;
   string readline;
   ifstream ifso;
-  
+
+  ifso.open("employee.txt");
+  if (!ifso) {
+    cout << "File Open Error \n";
+    exit(0);
+
+  }
+
+  while ((ifso >> readline) && (count < 1000)) {
+    nr[count].ID = getId()
+  }
+
 }
