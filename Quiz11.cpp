@@ -91,7 +91,13 @@ string getdepartmentname(string str)
 {
   int startpos, pos, endpos;
   startpos = 0;
-  for (int i = 0; i < 3)
+  for (int i = 0; i < 3; i++)
+  {
+    pos = str.find(',', startpos);
+    startpos = pos+1;
+  }
+  endpos = str.find(',', startpos);
+  return str.substr(startpos, endpos-startpos);
 }
 
 string getname(string str)
