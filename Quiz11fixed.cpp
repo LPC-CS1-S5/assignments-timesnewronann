@@ -94,7 +94,14 @@ void salaryEmployee(Employee er[],int num)
 
 void computerDepartment(Employee er)
 {
-  int pos
+  int pos;
+  for (int i = 0; i < num; i++)
+  {
+    if (emp[i].department == "Computer")
+    {
+      printEmployeeRecord(emp)
+    }
+  }
 }
 void printEmployeeRecord(Employee er)
 {
