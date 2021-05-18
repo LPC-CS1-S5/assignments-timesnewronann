@@ -28,3 +28,14 @@
 using namespace std;
 
 const int MAXSIZE =  1000;
+
+struct EmployeeRecord{
+  int ID;
+  string firstname;
+  string lastname;
+  int salary;
+  string department;
+  int day;
+  int year;
+  string month;
+};
