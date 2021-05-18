@@ -42,4 +42,10 @@ struct EmployeeRecord{
 
 int makeEmployeeRecord(EmployeeRecord []);
 
-void printEmployeeRecord(Employee emp);
+void printEmployeeRecord(EmployeeRecord emp);
+
+void findDepartment(EmployeeRecord[], int);
+
+void salaryEmployee(EmployeeRecord[], int);
+
+int 
