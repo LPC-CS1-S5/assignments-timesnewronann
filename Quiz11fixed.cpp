@@ -42,20 +42,20 @@ struct EmployeeRecord{
 };
 
 int makeEmployeeRecord(EmployeeRecord []);
-void printEmployeeRecord(EmployeeRecord emp);
+void printEmployeeRecord(EmployeeRecord er);
 
 void salaryEmployee(EmployeeRecord[], int);
 
-void computerDepartment(Employee[], int); // in my other program I wasn't narrowing down
+void computerDepartment(Employee[], int); // in my other program I wasn't narrowing down to just this computerDepartment
 
-void printEmployeeRecord(Employee emp);
+void printEmployeeRecord(Employee er);
 
 int main()
 {
   int numOfRecords = 0;
-  EmployeeRecord nr[MAXSIZE]; // Call makeEmployeeRecord and printEmployeeRecord
+  EmployeeRecord er[MAXSIZE]; // Call makeEmployeeRecord and printEmployeeRecord
 
-  numOfRecords = makeEmployeeRecord(nr);
+  numOfRecords = makeEmployeeRecord(er);
 
 
   cout << "There are " << numOfRecords << " records of employees. " << endl;
@@ -67,5 +67,36 @@ int makeEmployeeRecord(EmployeeRecord[])
   int i; 
   ifstream ifs;
   ifs.open("employee.txt");
-  if
+  if(!ifs) {
+    cout << "File Open Error\n";
+    exit(0);
+  }
+
+  if (ifs)
+  {
+    int i = 0;
+    while ()
+  }
+}
+
+void salaryEmployee(Employee er[],int num)
+{
+ int startpos, pos, endpos; // I got my salary from my other code that I wrote which didn't properly answer the question
+ startpos = 0;
+  for (int i = 0; i < 2; i++)
+  {
+    pos = str.find(',',startpos);
+    startpos = pos+1;
+  }
+  endpos = str.find(',',startpos);
+  return str.substr(startpos, endpos-startpos);
+}
+
+void computerDepartment(Employee er)
+{
+  int startpos, pos, endpos;
+}
+void printEmployeeRecord(Employee er)
+{
+  cout << emp.Id << "\t";
 }
