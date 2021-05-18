@@ -31,21 +31,24 @@ const int MAXSIZE =  1000;
 
 struct EmployeeRecord{
   int Id;
-  string name;
+  string firstname;
+  string lastname;
   int salary;
   string department;
-  string date;
+  string month;
+  int day;
+  int year;
   int count;
 };
 
 int makeEmployeeRecord(EmployeeRecord []);
 void printEmployeeRecord(EmployeeRecord emp);
 
-string getdepartmentname(string);
-string getname(string);
-int getsalary(string);
-string getdate(string);
-int getId(string);
+void salaryEmployee(EmployeeRecord[], int);
+
+void computerDepartment(Employee[], int); // in my other program I wasn't narrowing down
+
+void printEmployeeRecord(Employee emp);
 
 int main()
 {
@@ -53,6 +56,16 @@ int main()
   EmployeeRecord nr[MAXSIZE]; // Call makeEmployeeRecord and printEmployeeRecord
 
   numOfRecords = makeEmployeeRecord(nr);
-  printEmployeeRecord(nr, numOfRecords);
 
+
+  cout << "There are " << numOfRecords << " records of employees. " << endl;
+
+}
+
+int makeEmployeeRecord(EmployeeRecord[])
+{
+  int i; 
+  ifstream ifs;
+  ifs.open("employee.txt");
+  if
 }
