@@ -75,7 +75,7 @@ int makeEmployeeRecord(EmployeeRecord[])
   if (ifs)
   {
     int i = 0;
-    while ()
+    while (ifs >> emp[i])
   }
 }
 
@@ -105,5 +105,6 @@ void computerDepartment(Employee er[], int num)
 }
 void printEmployeeRecord(Employee er)
 {
-  cout << emp.Id << "\t";
+  cout << er.Id << "\t";
+  cout
 }
