@@ -35,30 +35,36 @@ struct EmployeeRecord{
   string lastname;
   int salary;
   string department;
-  string month;
-  int day;
-  int year;
-  int count;
+  string date;
 };
 
 int makeEmployeeRecord(EmployeeRecord []);
 void printEmployeeRecord(EmployeeRecord er);
-
 void salaryEmployee(EmployeeRecord[], int);
-
-void computerDepartment(Employee[], int); // in my other program I wasn't narrowing down to just this computerDepartment
-
-void printEmployeeRecord(Employee er);
+void computerDepartment(EmployeeRecord[], int); // in my other program I wasn't narrowing down to just this computerDepartment
 
 int main()
 {
   int numOfRecords = 0;
   EmployeeRecord er[MAXSIZE]; // Call makeEmployeeRecord and printEmployeeRecord
+  int i = 0;
 
   numOfRecords = makeEmployeeRecord(er);
 
-
+  cout << "ID \t Name\t Salary\t\t Department\t\t Date\t\t" << endl;
+  for (int i = 0; i < numOfRecords; i++)
+  {
+    printEmployeeRecord(er[i]);
+  }
   cout << "There are " << numOfRecords << " records of employees. " << endl;
+
+  cout << "Employees that make over 100000: " << endl;
+
+  cout << salaryEmployee(er, numOfRecords);
+  
+  cout << "Employees that work in the Computer department: " << endl;
+  computerDepartment(er, numOfRecords);
+
 
 }
 
@@ -75,36 +81,43 @@ int makeEmployeeRecord(EmployeeRecord[])
   if (ifs)
   {
     int i = 0;
-    while (ifs >> emp[i])
+    while (ifs >> er[i].Id >> er[i].firstname >> er[i].lastname >> er[i].salary >> er[i].department >> er[i].salary >> er[i].date)
+    {
+      i++;
+    }
+    return i;
   }
 }
 
-void salaryEmployee(Employee er[],int num)
+void salaryEmployee(EmployeeRecord er[],int num)
 {
- int startpos, pos, endpos; // I got my salary from my other code that I wrote which didn't properly answer the question
- startpos = 0;
-  for (int i = 0; i < 2; i++)
+ int pos; // I got my salary from my other code that I wrote which didn't properly answer the question
+  for (int i = 0; i < num; i++)
   {
-    pos = str.find(',',startpos);
-    startpos = pos+1;
+    if( er[i].salary > salary)
+    {
+      printEmployeeRecord(er[i]);
+    }
   }
-  endpos = str.find(',',startpos);
-  return str.substr(startpos, endpos-startpos);
 }
 
-void computerDepartment(Employee er[], int num)
+void computerDepartment(EmployeeRecord er[], int num)
 {
   int pos;
   for (int i = 0; i < num; i++)
   {
     if (emp[i].department == "Computer")
     {
-      printEmployeeRecord(emp)
+      printEmployeeRecord(er[i]);
     }
   }
 }
-void printEmployeeRecord(Employee er)
+void printEmployeeRecord(EmployeeRecord er)
 {
   cout << er.Id << "\t";
-  cout
+  cout << er.firstname << "\t";
+  cout << er.lastname << "\t";
+  cout << er.salary << "\t";
+  cout << er.department << "\t";
+  cout << er.date << "\t";
 }
