@@ -72,7 +72,7 @@ int makingNameRecords(Namerecords nr[])
 
 void printNameRecords(Namerecords nr[], int numofRecords)
 {
-  for(int i = 0; i < numofRecords)
+  for(int i = 0; i < numofRecords; i++)
   {
     cout << setw(5) << nr[i].stname << "\t";
     cout << setw(5) << nr[i].sex << "\t";
@@ -96,15 +96,40 @@ string getgender(string str)
 
 int getyear(string str)
 {
-  int pos 
+  int		startpos, pos;
+	int		yearlen=4;
+	int		year;
+	startpos = 0;
+	for(int i=0; i<2; i++) {
+		pos = str.find(',',startpos);
+		startpos = pos+1;
+	}
+	year = stoi(str.substr(pos+1, yearlen));
+	return year;
 }
 
 string getname(string str)
 {
-
+  int		startpos, pos, endpos;
+	startpos = 0;
+	for(int i=0; i<3; i++) {
+		pos = str.find(',',startpos);
+		startpos = pos+1;
+	}
+	endpos = str.find(',', startpos);
+	return str.substr(startpos, endpos-startpos);
 }
 
 int getcount(string str)
 {
+  int		startpos, pos, count;
+	
+	startpos = 0;
+	for(int i=0; i<4; i++) {
+		pos = str.find(',',startpos);
+		startpos = pos+1;
+	}
+	count = stoi(str.substr(startpos, str.length()));
+	return count;
 
 }

@@ -10,7 +10,18 @@ int main()
 
   // cin >> name;
 
-  getline(cin, name);
+  getline(cin, name, ',');
 
   cout << name << endl;
+
+  getline(cin, name, ',');
+  cout << name << endl;
+
+
 }
+
+// input queeue
+
+// job
+
+// getline()
