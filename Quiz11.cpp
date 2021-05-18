@@ -41,7 +41,7 @@ struct EmployeeRecord{
 int makeEmployeeRecord(EmployeeRecord []);
 void printEmployeeRecord(EmployeeRecord nr);
 
-void getdepartmentname(EmployeeRecord nr);
+string getdepartmentname(EmployeeRecord nr, string);
 string getname(string);
 int getsalary(string);
 string getdate(string);
@@ -99,32 +99,32 @@ void printEmployeeRecord(EmployeeRecord nr[], int numOfRecords)
 
 }
 
-void getdepartmentname(EmployeeRecord nr[], int num)
+string getdepartmentname(EmployeeRecord nr[], string num)
 {
   int startpos, pos, endpos;
   startpos = 0;
   for (int i = 0; i < 3; i++)
   {
-    pos = str.find(',', startpos);
+    pos = num.find(',', startpos);
     startpos = pos+1;
     if (nr[i].department == "Computer")
     {
       printEmployeeRecord(nr[i]);
     }
   }
-  endpos = str.find(',', startpos);
-  return str.substr(startpos, endpos-startpos);
+  endpos = num.find(',', startpos);
+  return num.substr(startpos, endpos-startpos);
 }
 
 string getname(string str)
 {
   int pos = str.find(',');
-  reeturn str.substr(pos+1, 1);
+  return str.substr(pos+1, 1);
 }
 
 int getId(string str)
 {
-  return str.substr(0,5);
+  cout<< str.substr(0,5);
 }
 
 string getdate(string str)
@@ -150,5 +150,5 @@ int getsalary(string str)
     startpos = pos+1;
   }
   endpos = str.find(',',startpos);
-  return str.substr(startpos, endpos-startpos);
+  cout << str.substr(startpos, endpos-startpos);
 }
