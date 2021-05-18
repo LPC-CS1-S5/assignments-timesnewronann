@@ -83,7 +83,12 @@ int makeEmployeeRecord(EmployeeRecord nr[])
 
 void printEmployeeRecord(EmployeeRecord nr[], int numOfRecords)
 {
-  cout << "ID: " << "\t\tName: " << "\t\tSalary: " << " Department: " << " Date: " << endl;
+  cout << nr[i].id << "\t";
+  cout << nr[i].name << "\t";
+  cout << nr[i].salary << "\t";
+  cout << nr[i].department << "\t";
+  cout << nr[i].date << "\t";
+  cout << nr[i].cout << endl;
 
 }
 
@@ -102,9 +107,33 @@ string getdepartmentname(string str)
 
 string getname(string str)
 {
+  int pos = str.find(',');
+  reeturn str.substr(pos+1, 1);
+}
+
+int getId(string str)
+{
+  return str.substr(0,5);
+}
+
+string getdate(string str)
+{
   int startpos, pos, endpos;
   startpos = 0;
-  for (int i = 0; i < 1; i++)
+  for (int i = 0; i < 4; i++)
+  {
+    pos = str.find(',',startpos);
+    startpos = pos+1;
+  }
+  endpos = str.find(',',startpos);
+  return str.substr(startpos, endpos-startpos);
+}
+
+int getsalary(string str)
+{
+  int startpos, pos, endpos;
+ startpos = 0;
+  for (int i = 0; i < 2; i++)
   {
     pos = str.find(',',startpos);
     startpos = pos+1;
