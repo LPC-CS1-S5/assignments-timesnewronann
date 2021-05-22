@@ -51,19 +51,19 @@ int main()
 
   numOfRecords = makeEmployeeRecord(er);
 
-  cout << "ID \t Name\t Salary\t\t Department\t\t Date\t\t" << endl;
-  for (int i = 0; i < numOfRecords; i++)
+  cout << "ID \t Name\t Salary\t\t Department\t\t Date\t\t" << endl; // used to display the categories with the spaces similar to how you showed us in class
+  for (int i = 0; i < numOfRecords; i++) // traverse the records of the employees 
   {
-    printEmployeeRecord(er[i]);
+    printEmployeeRecord(er[i]); // function call to return the employee records 
   }
   cout << "There are " << numOfRecords << " records of employees. " << endl;
 
   cout << "Employees that make over 100000: " << endl;
 
-  salaryEmployee(er, numOfRecords);
+  salaryEmployee(er, numOfRecords); // function for the salary 
   
   cout << "Employees that work in the Computer department: " << endl;
-  computerDepartment(er, numOfRecords);
+  computerDepartment(er, numOfRecords); // if someone is in the department 
 
 
 }
@@ -72,7 +72,7 @@ int makeEmployeeRecord(EmployeeRecord er[])
 {
   int i; 
   ifstream ifs;
-  ifs.open("employeeFixed.txt");
+  ifs.open("employeeFixed.txt"); // used to read the text file 
   if(!ifs) {
     cout << "File Open Error\n";
     exit(0);
@@ -81,7 +81,7 @@ int makeEmployeeRecord(EmployeeRecord er[])
   if (ifs)
   {
     int i = 0;
-    while (ifs >> er[i].Id >> er[i].firstname >> er[i].lastname >> er[i].salary >> er[i].department >> er[i].salary >> er[i].date)
+    while (ifs >> er[i].Id >> er[i].firstname >> er[i].lastname >> er[i].salary >> er[i].department >> er[i].salary >> er[i].date) // iff statement if the text file is correct 
     {
       i++;
     }
@@ -94,7 +94,7 @@ void salaryEmployee(EmployeeRecord er[],int num)
  int pos; // I got my salary from my other code that I wrote which didn't properly answer the question
   for (int i = 0; i < num; i++)
   {
-    int salary = 100000;
+    int salary = 100000; // comparison statement to see if someone makes 100000 or more 
     if( er[i].salary > salary)
     {
       printEmployeeRecord(er[i]);
@@ -105,7 +105,7 @@ void salaryEmployee(EmployeeRecord er[],int num)
 void computerDepartment(EmployeeRecord er[], int num)
 {
   int pos;
-  for (int i = 0; i < num; i++)
+  for (int i = 0; i < num; i++) // loop to traverse the employees and see if someone is in the computer department 
   {
     if (er[i].department == "Computer")
     {
@@ -115,7 +115,7 @@ void computerDepartment(EmployeeRecord er[], int num)
 }
 void printEmployeeRecord(EmployeeRecord er)
 {
-  cout << er.Id << "\t";
+  cout << er.Id << "\t"; // prints out all the struct members 
   cout << er.firstname << "\t";
   cout << er.lastname << "\t";
   cout << er.salary << "\t";

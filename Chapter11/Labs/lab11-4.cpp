@@ -21,7 +21,7 @@ using namespace std;
 const int MAXSIZE = 1000;
 
 struct Namerecords{
-  string stname
+  string stname;
   string sex;
   int year;
   string name; 

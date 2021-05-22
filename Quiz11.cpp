@@ -61,7 +61,7 @@ int main()
 
 }
 
-int makeEmployeeRecord(EmployeeRecord nr[])
+int makeEmployeeRecord(EmployeeRecord nr[]) // file input to open the text file 
 {
   int count = 0;
   string readline;
@@ -140,7 +140,7 @@ string getdate(string str)
   return str.substr(startpos, endpos-startpos);
 }
 
-int getsalary(EmployeeRecord [],string str)
+int getsalary(EmployeeRecord nr[],string str)
 {
   int startpos, pos, endpos;
  startpos = 0;
