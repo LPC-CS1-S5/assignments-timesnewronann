@@ -21,17 +21,20 @@ int main()
 
     cout << "Enter user string "; 
     cin >> userinput;
-    
+    cout << compare(exact, userinput, words); // function call 
 
 }
 
 bool compare(int exact, string userinput, string words)
 {
+  int poop = words.length()
   int pos = 0, i = 0;
 
   while ( pos != -1)
   {
     pos = words.find(userinput, i);
-    cout << "Found at: " << pos+1 
+    cout << "Found at: " << pos+1 << " in " << endl;
+    i = pos+1;
+    i++;
   }
 }
