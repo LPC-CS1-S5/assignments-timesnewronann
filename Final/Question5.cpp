@@ -91,8 +91,8 @@ int main()
 
   // to printout the file 
 
-  cout << h.first << endl;
-  cout << h.last << endl;
-  cout << h.ssn << endl;
-  cout << h.score.sc[N] << endl;
+  cout << "First name: " <<  h.first << endl;
+  cout << "Last name: " << h.last << endl;
+  cout << "Social Security Number: " <<  h.ssn << endl;
+  cout << "Score: " << h.score.sc[N] << endl;
 }
