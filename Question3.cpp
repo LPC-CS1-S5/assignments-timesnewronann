@@ -17,7 +17,7 @@ int main()
   int numbers1[SIZE1] = {2, 3, 5, 9, 10}; // array with the list 
   int numbers2[SIZE2] = {1, 2, 3, 5, 9, 10, 11, 13, 15, 17}; 
 
-  if(poop(numbers1,numbers2,SIZE1,SIZE2)) 
+  if(POOP(numbers1,numbers2,SIZE1,SIZE2)) 
     cout << "Numbers1 is a subset of the numbers2" << endl; 
   else 
     cout << "Numbers1 is not a subset of the numbers2" << endl;
@@ -28,9 +28,12 @@ int main()
 
 bool POOP(int numbers1[], int numbers2[], int SIZE1, int SIZE2) // function header 
 {
-  for (int i = 0; i < SIZE1; i++) // I'm not sure how to do this without a nested loop
+  int i; // I got an error that said J was not delcared in the scope so I brought the 
+          // declaration out 
+  int j;
+  for (i = 0; i < SIZE1; i++) // I'm not sure how to do this without a nested loop
   {
-    for (int j = 0; j < SIZE2; j++)
+    for (j = 0; j < SIZE2; j++)
     {
       if (numbers1[i] == numbers2[j])
       break;
