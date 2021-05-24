@@ -27,7 +27,7 @@ int main()
 
 bool compare(int exact, string userinput, string words)
 {
-  int poop = words.length()
+  int poop = words.length();
   int pos = 0, i = 0;
 
   while ( pos != -1)
