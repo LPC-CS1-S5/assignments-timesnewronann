@@ -8,7 +8,7 @@ tips: Two arrays have already sorted in ascending order.
 #include <cctype> // cstring stuff
 using namespace std;
 
-bool POOP(int numbers1[], int numbers2[])
+bool POOP(int numbers1[], int numbers2[], int SIZE1, int SIZE2); // funciton prototype 
 
 int main()
 {
