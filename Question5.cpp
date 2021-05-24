@@ -39,7 +39,7 @@ int main()
   string readline, poo;
   stringstream pp;
 
-  
+  ifs.open("grades.txt");
 
 
   fstream f;
