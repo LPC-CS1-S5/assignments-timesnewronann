@@ -36,7 +36,10 @@ Grade g; // global struct member or whatever that's called
 int main()
 {
   ifstream ifs;
-  // need to add code to insert text
+  string readline, poo;
+  stringstream pp;
+
+  
 
 
   fstream f;
