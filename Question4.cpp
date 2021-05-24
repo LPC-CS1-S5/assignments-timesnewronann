@@ -21,9 +21,16 @@ int main()
 
     cout << "Enter user string "; 
     cin >> userinput;
+    
+
 }
 
 bool compare(int exact, string userinput, string words)
 {
-  
+  int pos = 0, i = 0;
+
+  while ( pos != -1)
+  {
+    
+  }
 }
