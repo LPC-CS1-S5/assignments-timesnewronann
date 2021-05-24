@@ -31,6 +31,7 @@ bool compare(int exact, string userinput, string words)
 
   while ( pos != -1)
   {
-    
+    pos = words.find(userinput, i);
+    cout << "Found at: " << pos+1 
   }
 }
