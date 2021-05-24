@@ -7,4 +7,18 @@ For example, the given is "ch" and the original word is "church", we will count 
 In your main function, we will call a function to find the occurrences and then receive the total occurrences from that function, and then the returned result will be printed in the main function*/
 #include <iostream>
 #include <string>
-#include < 
+#include <cctype>
+#include <cstring>
+using namespace std;
+
+bool 
+
+int main()
+{
+  int exact = 0;
+  string userinput; 
+  string  words= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibus natura iure responderit non esse verum aliunde finem beate vivendi, a se principia rei gerendae peti; Quae enim adhuc protulisti, popularia sunt, ego autem a te elegantiora desidero. Duo Reges: constructio interrete. Tum Lucius: Mihi vero ista valde probata sunt, quod item fratri puto. Bestiarum vero nullum iudicium puto. Nihil enim iam habes, quod ad corpus referas; Deinde prima illa, quae in congressu solemus: Quid tu, inquit, huc? Et homini, qui ceteris animantibus plurimum praestat, praecipue a natura nihil datum esse dicemus?";
+
+    cout << "Enter user string "; 
+    cin >> userinput
+}
