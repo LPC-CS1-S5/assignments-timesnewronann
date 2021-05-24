@@ -10,3 +10,15 @@ In your program,
 
 [Test] Download the test program and store it in the same directory with the file "grades.bin". 
 */
+#include <iostream> // cout and cin
+#include <fstream> // file input...
+#include <cstring> // cstring stuff
+#include <cctype> // more cstring functions
+#include <sstream> // to be able to use sstream
+using namespace std;
+
+const unsigned short N = 5; // array length
+struct Scores {
+  double sc[N]; // array within a struct
+  string grade;
+}
