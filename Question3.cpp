@@ -3,3 +3,19 @@
 If it is implemented without a nested-loop, you can get the extra points.
 tips: Two arrays have already sorted in ascending order.
 */
+
+#include <iostream> // cin and cout 
+#include <cctype> // cstring stuff
+using namespace std;
+
+bool POOP(int numbers1[], int numbers2[])
+
+int main()
+{
+  const int SIZE1 = 5;  // provided in the question prompt 
+  const int SIZE2 = 10; // array lengths ^
+  int numbers1[SIZE1] = {2, 3, 5, 9, 10}; // array with the list 
+  int numbers2[SIZE2] = {1, 2, 3, 5, 9, 10, 11, 13, 15, 17}; 
+
+
+}
