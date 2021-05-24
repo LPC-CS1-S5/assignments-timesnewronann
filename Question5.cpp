@@ -21,4 +21,30 @@ const unsigned short N = 5; // array length
 struct Scores {
   double sc[N]; // array within a struct
   string grade;
+
+};
+
+struct Grade {
+  string first;
+  string last;
+  string ssn;
+  Scores score; // nested struct 
+};
+
+Grade g; // global struct member or whatever that's called
+
+int main()
+{
+  ifstream ifs;
+  // need to add code to insert text
+
+
+  fstream f;
+  f.open("grades.bin", ios:: out | ios:: binary);// if open write the conents used
+                                                // used size of to make sure # bytes good
+  if (f.is_open())
+  {
+    f.write(reinterpret_cast<char*>(&g), N*sizeof(Grade));
+    f.close();
+  }
 }
