@@ -5,3 +5,6 @@ If the given word occurs several times in an original word, we will count all oc
 
 For example, the given is "ch" and the original word is "church", we will count it as 2 occurrences.
 In your main function, we will call a function to find the occurrences and then receive the total occurrences from that function, and then the returned result will be printed in the main function*/
+#include <iostream>
+#include <string>
+#include < 
