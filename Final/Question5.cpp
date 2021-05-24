@@ -65,7 +65,7 @@ int main()
   g.score.grade;
 
 
-  fstream f;
+  fstream f;                                    // 
   f.open("grades.bin", ios:: out | ios:: binary);// if open write the conents used
                                                 // used size of to make sure # bytes good
   if (f.is_open())
