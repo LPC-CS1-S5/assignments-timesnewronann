@@ -40,6 +40,29 @@ int main()
   stringstream pp;
 
   ifs.open("grades.txt");
+  ifs >> readline;
+  pp << readline;
+
+  getline(pp, poo, ','); // reading one line from the text 
+  g.first = poo;
+
+  getline(pp, poo, ',');
+  g.last = poo; 
+
+  getline(pp, poo, ',');
+  g.ssn = stoi(poo);
+
+  int count = 0;
+
+  for ( int i = 0; i < 5; i++) // loop to traverse the array 
+  {
+    getline(pp, poo, ',');
+    g.score.sc[count];
+    count++;
+  }
+
+  getline(pp, poo, ',');
+  g.score.grade;
 
 
   fstream f;
@@ -64,4 +87,12 @@ int main()
   }
   else 
     cout << "Error!\n";
+
+
+  // to printout the file 
+
+  cout << h.first << endl;
+  cout << h.last << endl;
+  cout << h.ssn << endl;
+  cout << h.score.sc[N] << endl;
 }
