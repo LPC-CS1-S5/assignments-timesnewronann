@@ -47,4 +47,18 @@ int main()
     f.write(reinterpret_cast<char*>(&g), N*sizeof(Grade));
     f.close();
   }
+
+  else 
+    cout << "Error!\n";
+
+  Grade h;
+
+  f.open("grades.bin", ios :: in | ios :: binary); // used to read the contents into bin
+  if (f.is_open())
+  {
+    f.read(reinterpret_cast<char*>(&h), N*sizeof(Grade));
+    f.close();
+  }
+  else 
+    cout << "Error!\n";
 }
