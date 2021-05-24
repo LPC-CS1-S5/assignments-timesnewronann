@@ -33,7 +33,7 @@ bool compare(int exact, string userinput, string words)
   while ( pos != -1)
   {
     pos = words.find(userinput, i);
-    cout << "Found at: " << pos+1 << " in " << words.substr(pos, 4) << endl;
+    cout << "Found at: " << pos+1 << " in " << words.substr(pos, 10) << endl;
     i = pos+1;
     i++;
   }
