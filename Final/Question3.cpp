@@ -15,7 +15,7 @@ int main()
   const int SIZE1 = 5;  // provided in the question prompt 
   const int SIZE2 = 10; // array lengths ^
   int numbers1[SIZE1] = {2, 3, 5, 9, 10}; // array with the list 
-  int numbers2[SIZE2] = {1, 2, 3, 5, 9, 10, 11, 13, 15, 17}; 
+  int numbers2[SIZE2] = {1, 2, 3, 4, 9, 10, 11, 13, 15, 17}; 
 
   if(POOP(numbers1,numbers2,SIZE1,SIZE2)) 
     cout << "Numbers1 is a subset of the numbers2" << endl; 
